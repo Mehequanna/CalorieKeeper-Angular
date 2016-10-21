@@ -1,5 +1,5 @@
 {
-  "name": "coffee-shop",
+  "name": "calorie-keeper",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
@@ -48,13 +48,13 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shabis/angular-coffeeshop.git"
+    "url": "git+https://github.com/Mehequanna/js-project2-angular.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/shabis/angular-coffeeshop/issues"
+    "url": "https://github.com/Mehequanna/js-project2-angular/issues"
   },
-  "homepage": "https://github.com/shabis/angular-coffeeshop/readme",
+  "homepage": "https://github.com/Mehequanna/js-project2-angular/readme",
   "keywords": [],
   "description": ""
 }

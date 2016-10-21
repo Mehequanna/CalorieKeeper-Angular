@@ -1,12 +1,12 @@
 {
-  "name": "coffee-shop",
+  "name": "calorie-keeper",
   "description": "",
   "main": "index.js",
   "authors": [
     "Stephen Emery <emery.stephen@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/Mehequanna/angular-coffeeshop",
+  "homepage": "https://github.com/Mehequanna/js-project2-angular",
   "ignore": [
     "**/.*",
     "node_modules",
