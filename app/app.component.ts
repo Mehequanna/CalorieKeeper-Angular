@@ -28,7 +28,7 @@ import { Meal } from './meal.model';
 
 export class AppComponent {
   public masterMealList: Meal[] = [
-    new Meal("Example: Chicken Tikka Masala", "Chicken, sauce, rice, and a naan. Best food on the planet.", 1000),
+    new Meal("Example: Chicken Tikka Masala", "Chicken, sauce, rice, and a naan. Best food on the planet. Don't judge me!", 1000),
     new Meal("Example: Chicken Tereyaki", "Chicken, teriyaki sauce, and white rice. Yeah that's right, I ate all of it.", 450)
   ];
 
