@@ -11,9 +11,9 @@ import { Meal } from './meal.model';
       <meal-list
         [childMealList]="masterMealList"
       ></meal-list>
-      <new-meal
-
-      ></new-meal>
+        <new-meal
+          (newMealSender)="addMeal($event)"
+        ></new-meal>
     </div>
   `
 })
@@ -23,4 +23,8 @@ export class AppComponent {
     new Meal("Example: Chicken Tikka Masala", "Chicken, sauce, rice, and a naan. Best food on the planet.", 1000),
     new Meal("Example: Chicken Tereyaki", "Chicken, teriyaki sauce, and white rice. Yeah that's right, I ate all of it.", 450)
   ];
+
+  addMeal(newMealFromChild: Meal) {
+    this.masterMealList.push(newMealFromChild);
+  }
 }
