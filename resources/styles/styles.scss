@@ -1,0 +1,122 @@
+$backgrounds : rgba(74,38,26,.7);
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: $backgrounds;
+}
+
+.jumbotron {
+  background: url(../../resources/img/header.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: 0% 65%;
+}
+
+.logo {
+  margin: 40px;
+  float:right;
+  height: 150%;
+}
+
+.col-xs-4 {
+  margin-bottom: 10px;
+}
+
+select.selectors {
+  background-color: $backgrounds;
+}
+
+select.filter.form-control, input {
+  color: white;
+  background-color: #AD8D5E;
+}
+
+.btn {
+  background-color: #AD8D5E;
+  font-weight: bold;
+  border: 1px solid #000000;
+}
+
+
+
+body {
+  text-align: center;
+  color: white;
+  background-image: url(../../resources/img/wood.jpg);
+  background-size: 100%;
+
+  #addDrink {
+    clear: both;
+  }
+}
+
+input {
+  margin: 10px;
+}
+
+#addDrink {
+  background: $backgrounds;
+  padding: 15px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  width: 40%;
+  display: block;
+  margin: 15px auto;
+}
+
+
+#newName input[type="text"],
+#newName textarea {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ccc;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#addDrink input[type="text"]:hover,
+#addDrink textarea:hover {
+  border: 1px solid #aaa;
+}
+
+#addDrink button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#addDrink button[type="submit"]:hover {
+  background: #43A047;
+}
+
+#editDrink {
+  background: $backgrounds;
+  padding: 15px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  width: 40%;
+  display: block;
+  margin: 15px auto;
+}
+
+#editDrink input[type="text"]:hover,
+#editDrink textarea:hover {
+  border: 1px solid #aaa;
+}
+
+#editDrink button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#editDrink button[type="submit"]:hover {
+  background: #43A047;
+}
