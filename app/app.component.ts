@@ -8,19 +8,21 @@ import { Meal } from './meal.model';
       <div class="jumbotron">
         <h1>Calorie Keeper</h1>
       </div>
-      <meal-list
-        [childMealList]="masterMealList"
-        (clickSender)="showDetails($event)"
-      ></meal-list>
-      <edit-meal
-        [childSelectedMeal]="selectedMeal"
-        (doneClickedSender)="finishedEditing()"
-      ></edit-meal>
-      <button (click)="showMealDiv()" class="btn" *ngIf="!hideNewMealButton">New Meal</button>
-      <div *ngIf="showAddMeal" id="newMeal">
-        <new-meal
-          (newMealSender)="addMeal($event)"
-        ></new-meal>
+      <div id="main">
+        <meal-list
+          [childMealList]="masterMealList"
+          (clickSender)="showDetails($event)"
+        ></meal-list>
+        <edit-meal
+          [childSelectedMeal]="selectedMeal"
+          (doneClickedSender)="finishedEditing()"
+        ></edit-meal>
+        <button (click)="showMealDiv()" class="btn" *ngIf="!hideNewMealButton">New Meal</button>
+        <div *ngIf="showAddMeal" id="newMeal">
+          <new-meal
+            (newMealSender)="addMeal($event)"
+          ></new-meal>
+        </div>
       </div>
     </div>
   `

@@ -1,6 +1,6 @@
-$background : rgba(28,16,0,.6);
+$background : rgba(28,16,0,.8);
 $button : rgba(160,8,6,.4);
-$text : rgb(43,16,2);
+$text : rgb(190,70,40);
 $header : rgb(190,40,20);
 
 
@@ -11,16 +11,28 @@ body {
   background-size:cover;
   background-attachment: fixed;
   background-position: 60% 0%;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, .15);
   .jumbotron {
     background-color: $background;
-    text-shadow: 0px 2px 2px rgba(173, 95, 17, 0.65);
     color: $header;
   }
-  .btn {
+  .btn, select.filter.form-control {
     background-color: $button;
-    text-shadow: 0px 1px 2px rgba(173, 95, 17, 0.65);
+    color: white;
   }
   color: $text;
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $background;
+  }
+  #main {
+    background-color: $background;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  #editMeal,
+  #newMeal {
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
