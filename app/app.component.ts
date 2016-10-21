@@ -5,14 +5,14 @@ import { Meal } from './meal.model';
   selector: 'calorie-keeper',
   template: `
     <div class="container">
-      <div class="jumbotron text-center">
+      <div class="jumbotron">
         <h1>Calorie Keeper</h1>
       </div>
       <meal-list
         [childMealList]="masterMealList"
       ></meal-list>
       <new-meal
-        
+
       ></new-meal>
     </div>
   `
