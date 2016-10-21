@@ -11,9 +11,12 @@ import { Meal } from './meal.model';
       <meal-list
         [childMealList]="masterMealList"
       ></meal-list>
+      <button (click)="showMealDiv()" class="btn" *ngIf="!hideNewMealButton">New Meal</button>
+      <div *ngIf="showAddMeal" id="newMeal">
         <new-meal
           (newMealSender)="addMeal($event)"
         ></new-meal>
+      </div>
     </div>
   `
 })
@@ -24,7 +27,17 @@ export class AppComponent {
     new Meal("Example: Chicken Tereyaki", "Chicken, teriyaki sauce, and white rice. Yeah that's right, I ate all of it.", 450)
   ];
 
+  hideNewMealButton = false;
+  showAddMeal = false;
+  showMealDiv() {
+    this.showAddMeal = true;
+    this.hideNewMealButton = true;
+  }
+
+
   addMeal(newMealFromChild: Meal) {
     this.masterMealList.push(newMealFromChild);
+    this.showAddMeal = false;
+    this.hideNewMealButton = false;
   }
 }
