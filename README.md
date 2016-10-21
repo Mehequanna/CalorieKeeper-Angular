@@ -15,7 +15,7 @@ To use the code, you can clone the repository at: [https://github.com/mehequanna
 ##NPM and Bower Dependency Installation
 * In terminal and the project directory, run: $ npm install.
 * Run: $ bower install
-* Finally run: $ gulp serve
+* Finally run: $ gulp serve to see the project!
 
 ## Author
 Stephen Emery
@@ -23,3 +23,6 @@ Stephen Emery
 ##License
 This work can be used under the MIT License.
 Copyright (c) 2016 Stephen Emery
+
+##Issues
+* Table not mobile responsive.
