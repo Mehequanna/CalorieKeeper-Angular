@@ -15,6 +15,7 @@ import { Meal } from './meal.model';
           <td>{{ currentMeal.name }}</td>
           <td>{{ currentMeal.description }}</td>
           <td class="text-nowrap">{{ currentMeal.calories }}</td>
+          <td><button (click)="editButtonClick(currentMeal)" class="btn">Edit</button></td>
         </tr>
       </table>
     </div>
@@ -23,4 +24,8 @@ import { Meal } from './meal.model';
 
 export class MealListComponent {
   @Input() childMealList: Meal[];
+  @Output() clickSender = new EventEmitter();
+  editButtonClick(mealToEdit: Meal) {
+    this.clickSender.emit(mealToEdit);
+  }
 }

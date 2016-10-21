@@ -10,7 +10,12 @@ import { Meal } from './meal.model';
       </div>
       <meal-list
         [childMealList]="masterMealList"
+        (clickSender)="showDetails($event)"
       ></meal-list>
+      <edit-meal
+        [childSelectedMeal]="selectedMeal"
+        (doneClickedSender)="finishedEditing()"
+      ></edit-meal>
       <button (click)="showMealDiv()" class="btn" *ngIf="!hideNewMealButton">New Meal</button>
       <div *ngIf="showAddMeal" id="newMeal">
         <new-meal
@@ -34,10 +39,17 @@ export class AppComponent {
     this.hideNewMealButton = true;
   }
 
-
   addMeal(newMealFromChild: Meal) {
     this.masterMealList.push(newMealFromChild);
     this.showAddMeal = false;
     this.hideNewMealButton = false;
+  }
+
+  selectedMeal: Meal = null;
+  showDetails(clickedMeal: Meal) {
+    this.selectedMeal = clickedMeal;
+  }
+  finishedEditing() {
+    this.selectedMeal = null;
   }
 }
