@@ -11,6 +11,9 @@ import { Meal } from './meal.model';
       <meal-list
         [childMealList]="masterMealList"
       ></meal-list>
+      <new-meal
+        
+      ></new-meal>
     </div>
   `
 })
