@@ -7,17 +7,17 @@ import { Meal } from './meal.model';
   <h1>Add a Meal</h1>
   <div>
     <label>Meal:</label>
-    <input #newName type="text" value="Your Meal Name"/>
+    <input #newName type="text" value=" " />
     <br>
     <label>Description of Meal:</label>
-    <input #newDescription type="text" value="Your Meal Description"/>
+    <input #newDescription type="text" value=" "/>
     <br>
     <label># of Calories:</label>
     <input #newCalories type="number" min="0" step="10" value="150"/>
     <br>
     <button class="btn" (click)="addClicked(newName.value, newDescription.value, newCalories.value);
-    newName.value='Your Meal Name';
-    newDescription.value='Your Meal Description';
+    newName.value=' ';
+    newDescription.value=' ';
     newCalories.value='150';
     ">Add Meal</button>
   </div>
