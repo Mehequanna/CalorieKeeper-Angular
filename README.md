@@ -18,7 +18,7 @@ Typescript, AngularJS, CSS/SASS, NPM, Gulp, Bower
 ## Usage
 To use the code, you can clone the repository at: [https://github.com/mehequanna/js-project2-angular](https://github.com/mehequanna/js-project2-angular).
 * $ git clone https://github.com/mehequanna/js-project2-angular
-* $ cd js-project1
+* $ cd js-project2-angular
 
 ##NPM and Bower Dependency Installation
 * In terminal and the project directory, run: $ npm install.
