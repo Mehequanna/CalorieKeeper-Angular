@@ -4,6 +4,8 @@ Calorie Keeper
 ## Features
 This app will allow users to log the name, description, and calorie count of their meal.
 
+![screenshot of project](calories.png)
+
 ## User Stories
 These were the User Stories I was responding to:
 As a user…
@@ -24,8 +26,6 @@ To use the code, you can clone the repository at: [https://github.com/mehequanna
 * In terminal and the project directory, run: $ npm install.
 * Run: $ bower install
 * Finally run: $ gulp serve to see the project!
-
-##Known Issues
 
 ## Author
 Stephen Emery
